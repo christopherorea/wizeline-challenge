@@ -3,7 +3,5 @@ pandas
 seaborn
 matplotlib
 scikit-learn
-tensorflow
 setuptools
-streamlit
 joblib
