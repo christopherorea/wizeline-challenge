@@ -2,9 +2,6 @@
 import pandas as pd
 import joblib
 from sklearn.metrics import r2_score as R2Score
-from tensorflow.random import set_seed
-
-set_seed(42) # Set seed for reproducibility
 
 # This needs to be changed with a method that pulls data from a source (Bucket, DB, DWH, etc)
 # Using a static name, can make the pulled content dynamic and always output different predictions.

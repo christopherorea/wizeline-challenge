@@ -22,7 +22,7 @@ if uploaded_file is not None:
     df = pd.read_csv(uploaded_file)
     normalized_df=(df-df_original_no_target.min())/(df_original_no_target.max()-df_original_no_target.min())
     prediction = model.predict(normalized_df)
-    normalized_df['target_pred'] = prediction
+    normalized_df['target'] = prediction
     denormalized_df = normalized_df * ( df_original.max() - df_original.min() ) + df_original.min()
     st.write(denormalized_df)
 
