@@ -5,7 +5,6 @@ from sklearn.decomposition import PCA
 from sklearn.metrics import r2_score as R2Score
 from tensorflow.random import set_seed
 import streamlit as st
-from io import StringIO
 
 @st.cache_resource
 def get_model():
